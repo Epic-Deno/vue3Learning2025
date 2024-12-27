@@ -1,17 +1,8 @@
-<!--
- * @Description: 首页
- * @Author: zhang zhen
- * @Date: 2024-12-27 09:49:44
- * @LastEditors: zhang zhen
- * @LastEditTime: 2024-12-27 09:59:55
- * @FilePath: /new-template/src/App.vue
--->
-<script setup>
-
+<script setup lang="ts">
 </script>
 
 <template>
-
+ 
 </template>
 
 <style scoped>

@@ -1,10 +1,10 @@
 /*
- * @Description:初始化
+ * @Description: 配置
  * @Author: zhang zhen
- * @Date: 2024-12-27 09:49:44
+ * @Date: 2024-12-27 10:18:00
  * @LastEditors: zhang zhen
- * @LastEditTime: 2024-12-27 09:56:18
- * @FilePath: /new-template/src/main.js
+ * @LastEditTime: 2024-12-27 10:22:22
+ * @FilePath: /new-template/src/main.ts
  */
 import { createApp } from 'vue'
 import './style.css'

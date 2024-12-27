@@ -1,8 +1,12 @@
 {
   "name": "new-template",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.0.1",
   "type": "module",
+  "author": {
+    "name": "Pony zhang",
+    "email": "zhenz0278@gmail.com"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -10,11 +14,16 @@
   },
   "dependencies": {
     "@ant-design/icons-vue": "^7.0.1",
+    "@vueuse/core": "^12.2.0",
     "ant-design-vue": "4.x",
-    "vue": "^3.5.13"
+    "axios": "^1.7.9",
+    "pinia": "^2.3.0",
+    "vue": "^3.5.13",
+    "vue-router": "4"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.2.1",
+    "less": "^4.2.1",
     "vite": "^6.0.5"
   }
 }

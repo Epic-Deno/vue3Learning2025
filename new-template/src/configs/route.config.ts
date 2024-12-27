@@ -7,7 +7,6 @@
  * @FilePath: /new-template/src/configs/route.config.ts
  */
 import type { RouteRecordRaw } from 'vue-router';
-import {  } from '';
 
 // 基础路由
 const basicRoutes: Array<RouteRecordRaw> = [

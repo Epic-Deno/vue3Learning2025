@@ -21,9 +21,9 @@
         HomeOutlined
     } from '@ant-design/icons-vue';
     import { useRoute } from "vue-router";
-    const selectedKeys = ref<string[]>(['dashborad']);
     const { name } = useRoute();
-    console.log(name)
+    const selectedKeys = ref<string[]>([name]);
+
 </script>
 
 <style lang="less" scoped></style>

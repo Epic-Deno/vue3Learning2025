@@ -3,7 +3,7 @@
  * @Author: zhang zhen
  * @Date: 2024-12-28 15:43:28
  * @LastEditors: zhang zhen
- * @LastEditTime: 2024-12-28 15:53:35
+ * @LastEditTime: 2024-12-28 16:00:24
  * @FilePath: /new-template/src/components/tools/logo.vue
 -->
 <template>
@@ -18,6 +18,17 @@
 </script>
 
 <style lang="less" scoped>
+.ant-layout-sider-dark {
+    .name {
+        color: #fff;
+    }
+    
+}
+.ant-layout-sider-collapsed {
+    .name {
+        display: none;
+    }
+}
 .logo_area {
     display: flex;
     align-items: center;
@@ -26,6 +37,10 @@
     box-sizing: border-box;
     height: 49px;
     grid-gap: 0 15px;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
     .logo_icon {
         width: 38px;
     }

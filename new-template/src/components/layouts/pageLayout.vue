@@ -3,11 +3,11 @@
  * @Author: zhang zhen
  * @Date: 2024-12-27 11:29:31
  * @LastEditors: zhang zhen
- * @LastEditTime: 2024-12-27 11:32:06
+ * @LastEditTime: 2024-12-28 15:36:06
  * @FilePath: /new-template/src/components/layouts/pageLayout.vue
 -->
 <template>
-    <a-layout>
+    <a-layout class="layout-container">
         <a-layout-sider v-model:collapsed="collapsed" :trigger="null" collapsible>
             <div class="logo" />
             <a-menu v-model:selectedKeys="selectedKeys" theme="dark" mode="inline">
@@ -26,12 +26,12 @@
             </a-menu>
         </a-layout-sider>
         <a-layout>
-            <a-layout-header style="background: #fff; padding: 0">
+            <a-layout-header style="background: #fff; padding: 0 26px">
                 <menu-unfold-outlined v-if="collapsed" class="trigger" @click="() => (collapsed = !collapsed)" />
                 <menu-fold-outlined v-else class="trigger" @click="() => (collapsed = !collapsed)" />
             </a-layout-header>
             <a-layout-content :style="{ margin: '24px 16px', padding: '24px', background: '#fff', minHeight: '280px' }">
-                Content
+                <router-view></router-view>
             </a-layout-content>
         </a-layout>
     </a-layout>
@@ -48,7 +48,7 @@
     } from '@ant-design/icons-vue';
     const selectedKeys = ref<string[]>(['1']);
     const collapsed = ref<boolean>(false);
-    
+
 </script>
 
 <style lang="less" scoped>
@@ -72,5 +72,9 @@
 
 .site-layout .site-layout-background {
     background: #fff;
+}
+
+.layout-container {
+    height: 100vh;
 }
 </style>

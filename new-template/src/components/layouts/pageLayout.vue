@@ -3,27 +3,14 @@
  * @Author: zhang zhen
  * @Date: 2024-12-27 11:29:31
  * @LastEditors: zhang zhen
- * @LastEditTime: 2024-12-28 15:50:18
+ * @LastEditTime: 2024-12-28 16:09:27
  * @FilePath: /new-template/src/components/layouts/pageLayout.vue
 -->
 <template>
     <a-layout class="layout-container">
         <a-layout-sider v-model:collapsed="collapsed" :trigger="null" collapsible>
             <Logo />
-            <a-menu v-model:selectedKeys="selectedKeys" theme="dark" mode="inline">
-                <a-menu-item key="1">
-                    <user-outlined />
-                    <span>nav 1</span>
-                </a-menu-item>
-                <a-menu-item key="2">
-                    <video-camera-outlined />
-                    <span>nav 2</span>
-                </a-menu-item>
-                <a-menu-item key="3">
-                    <upload-outlined />
-                    <span>nav 3</span>
-                </a-menu-item>
-            </a-menu>
+            <Menus />
         </a-layout-sider>
         <a-layout>
             <a-layout-header style="background: #fff; padding: 0 26px">
@@ -41,13 +28,10 @@
     import Logo from '../tools/logo.vue';
     import { ref } from 'vue';
     import {
-        UserOutlined,
-        VideoCameraOutlined,
-        UploadOutlined,
         MenuUnfoldOutlined,
         MenuFoldOutlined,
     } from '@ant-design/icons-vue';
-    const selectedKeys = ref<string[]>(['1']);
+    import Menus from '../tools/menus/index.vue';
     const collapsed = ref<boolean>(false);
 
 </script>

@@ -3,7 +3,7 @@
  * @Author: zhang zhen
  * @Date: 2024-12-28 15:43:28
  * @LastEditors: zhang zhen
- * @LastEditTime: 2024-12-28 16:00:24
+ * @LastEditTime: 2024-12-28 16:01:45
  * @FilePath: /new-template/src/components/tools/logo.vue
 -->
 <template>
@@ -25,6 +25,9 @@
     
 }
 .ant-layout-sider-collapsed {
+    .logo_area {
+        justify-content: center;
+    }
     .name {
         display: none;
     }

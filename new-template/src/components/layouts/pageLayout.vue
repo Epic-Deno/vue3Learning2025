@@ -3,7 +3,7 @@
  * @Author: zhang zhen
  * @Date: 2024-12-27 11:29:31
  * @LastEditors: zhang zhen
- * @LastEditTime: 2024-12-28 16:09:27
+ * @LastEditTime: 2024-12-28 16:27:36
  * @FilePath: /new-template/src/components/layouts/pageLayout.vue
 -->
 <template>
@@ -13,9 +13,11 @@
             <Menus />
         </a-layout-sider>
         <a-layout>
-            <a-layout-header style="background: #fff; padding: 0 26px">
+            <a-layout-header style="background: #fff; padding: 0 26px; display: flex;
+            align-items: center;justify-content: space-between;">
                 <menu-unfold-outlined v-if="collapsed" class="trigger" @click="() => (collapsed = !collapsed)" />
                 <menu-fold-outlined v-else class="trigger" @click="() => (collapsed = !collapsed)" />
+                <userOption />
             </a-layout-header>
             <a-layout-content :style="{ margin: '24px 16px', padding: '24px', background: '#fff', minHeight: '280px' }">
                 <router-view></router-view>
@@ -27,6 +29,7 @@
 <script setup lang="ts">
     import Logo from '../tools/logo.vue';
     import { ref } from 'vue';
+    import userOption from "../tools/userOption.vue";
     import {
         MenuUnfoldOutlined,
         MenuFoldOutlined,

@@ -3,13 +3,13 @@
  * @Author: zhang zhen
  * @Date: 2024-12-27 11:29:31
  * @LastEditors: zhang zhen
- * @LastEditTime: 2024-12-28 15:36:06
+ * @LastEditTime: 2024-12-28 15:50:18
  * @FilePath: /new-template/src/components/layouts/pageLayout.vue
 -->
 <template>
     <a-layout class="layout-container">
         <a-layout-sider v-model:collapsed="collapsed" :trigger="null" collapsible>
-            <div class="logo" />
+            <Logo />
             <a-menu v-model:selectedKeys="selectedKeys" theme="dark" mode="inline">
                 <a-menu-item key="1">
                     <user-outlined />
@@ -38,6 +38,7 @@
 </template>
 
 <script setup lang="ts">
+    import Logo from '../tools/logo.vue';
     import { ref } from 'vue';
     import {
         UserOutlined,

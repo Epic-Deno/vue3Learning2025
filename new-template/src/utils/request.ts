@@ -8,7 +8,7 @@
  */
 import axios from 'axios';
 import { RequestObject } from '@/types/request';
-import type { AxiosError, AxiosRequestConfig } from 'axios'
+import type { AxiosError, AxiosRequestConfig, Axios } from 'axios'
 
 const basicConfig: AxiosRequestConfig = {
     baseURL: import.meta.env.VITE_APP_BASE_API,
@@ -16,6 +16,6 @@ const basicConfig: AxiosRequestConfig = {
 };
 
 
-const service:  = axios.create({
+const service: Axios = axios.create({
     ...basicConfig
   })

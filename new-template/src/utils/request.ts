@@ -3,12 +3,12 @@
  * @Author: zhang zhen
  * @Date: 2024-12-27 10:02:45
  * @LastEditors: zhang zhen
- * @LastEditTime: 2024-12-29 11:34:21
+ * @LastEditTime: 2024-12-29 11:35:51
  * @FilePath: /new-template/src/utils/request.ts
  */
 import axios from 'axios';
 import { RequestObject } from '@/types/request';
-import type { AxiosError, AxiosRequestConfig, Axios } from 'axios'
+import type { AxiosError, AxiosRequestConfig, AxiosInstance } from 'axios'
 
 const basicConfig: AxiosRequestConfig = {
     baseURL: import.meta.env.VITE_APP_BASE_API,
@@ -16,6 +16,6 @@ const basicConfig: AxiosRequestConfig = {
 };
 
 
-const service: Axios = axios.create({
+const service: AxiosInstance = axios.create({
     ...basicConfig
   })

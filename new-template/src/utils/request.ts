@@ -3,7 +3,7 @@
  * @Author: zhang zhen
  * @Date: 2024-12-27 10:02:45
  * @LastEditors: zhang zhen
- * @LastEditTime: 2024-12-30 09:21:55
+ * @LastEditTime: 2024-12-30 11:42:31
  * @FilePath: /new-template/src/utils/request.ts
  */
 import axios from 'axios';
@@ -22,3 +22,17 @@ const service: AxiosInstance = axios.create({
 
 
   // axios 请求封装
+  // 发起请求之前的拦截器
+service.interceptors.request.use(
+    config => {
+      // 如果有token 就携带tokon
+      const token = window.localStorage.getItem("token");
+      if (token) {
+        config.headers['Authorization'] = token;
+      }
+      return config;
+    },
+    error => Promise.reject(error)
+  );
+
+  export default service;

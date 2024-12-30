@@ -34,5 +34,23 @@ service.interceptors.request.use(
     },
     error => Promise.reject(error)
   );
-
+  // 响应拦截器
+  service.interceptors.response.use(
+    response => {
+      const res = response.data;
+      if (response.status !== 200) {
+        return Promise.reject(new Error(res.message || "Error"));
+      } else {
+        const { code } = res
+        if (code == '401') {
+          window.localStorage.clear();
+          return location.reload();
+        }
+        return res;
+      }
+    },
+    error => {
+      return Promise.reject(error);
+    }
+  );
   export default service;

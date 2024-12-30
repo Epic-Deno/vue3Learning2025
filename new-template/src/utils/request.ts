@@ -3,11 +3,11 @@
  * @Author: zhang zhen
  * @Date: 2024-12-27 10:02:45
  * @LastEditors: zhang zhen
- * @LastEditTime: 2024-12-30 11:42:31
+ * @LastEditTime: 2024-12-30 11:50:09
  * @FilePath: /new-template/src/utils/request.ts
  */
 import axios from 'axios';
-import { RequestObject } from '@/types/request';
+import { RequestObject, ResponseData, ErrorResponse } from '@/types/request';
 import type { AxiosError, AxiosRequestConfig, AxiosInstance } from 'axios'
 
 const basicConfig: AxiosRequestConfig = {
@@ -32,11 +32,11 @@ service.interceptors.request.use(
       }
       return config;
     },
-    error => Promise.reject(error)
+    error => Promise.reject(new Error(error.message || error))
   );
   // 响应拦截器
   service.interceptors.response.use(
-    response => {
+    (response) => {
       const res = response.data;
       if (response.status !== 200) {
         return Promise.reject(new Error(res.message || "Error"));
@@ -50,7 +50,8 @@ service.interceptors.request.use(
       }
     },
     error => {
-      return Promise.reject(error);
+      return Promise.reject(new Error(error.message || error));
     }
   );
+
   export default service;

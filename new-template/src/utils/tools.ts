@@ -54,3 +54,23 @@ export function findClosestCompleteZeroIndex(data) {
     return result;
   }
   
+  /**
+   * @description: 生成单词数组
+   * @param {*} text
+   * @return {*}
+   */
+  export function extractWords(text) {
+    // 提取单词的正则表达式
+    // 正则表达式：匹配单词和标点符号
+    const regex = /[a-zA-Z0-9']+|[.,!?;(){}[\]"'-]/g;
+    let tokens = text.match(regex) || [];
+    let result = [];
+    for (const element of tokens) {
+      let itemLower = element.toLowerCase();
+      result.push({
+        original: element,
+        lower: itemLower
+      });
+    }
+    return result;
+  }

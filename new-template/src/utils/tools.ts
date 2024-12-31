@@ -3,7 +3,7 @@
  * @Author: zhang zhen
  * @Date: 2024-12-31 14:56:34
  * @LastEditors: zhang zhen
- * @LastEditTime: 2024-12-31 14:56:35
+ * @LastEditTime: 2024-12-31 14:58:28
  * @FilePath: /new-template/src/utils/tools.ts
  */
 
@@ -74,3 +74,24 @@ export function findClosestCompleteZeroIndex(data) {
     }
     return result;
   }
+
+
+  /**
+ * 过滤对象中为空的属性
+ * @param obj
+ * @returns {*}
+ */
+export function filterObj(obj) {
+    if (!(typeof obj == 'object')) {
+      return;
+    }
+  
+    for (let key in obj) {
+      if (obj.hasOwnProperty(key)
+        && (obj[key] == null || obj[key] == undefined || obj[key] === '')) {
+        delete obj[key];
+      }
+    }
+    return obj;
+  }
+  

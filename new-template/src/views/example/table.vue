@@ -6,3 +6,12 @@
  * @LastEditTime: 2025-01-01 15:46:25
  * @FilePath: /new-template/src/views/example/table.vue
 -->
+<template>
+    <div>
+
+    </div>
+</template>
+
+<script setup lang="ts">
+
+</script>

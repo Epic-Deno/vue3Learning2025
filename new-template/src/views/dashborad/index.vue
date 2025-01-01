@@ -3,13 +3,13 @@
  * @Author: zhang zhen
  * @Date: 2024-12-27 11:00:54
  * @LastEditors: zhang zhen
- * @LastEditTime: 2025-01-01 15:42:34
+ * @LastEditTime: 2025-01-01 15:43:51
  * @FilePath: /new-template/src/views/dashborad/index.vue
 -->
 <template>
     <a-row :gutter="16">
-        <a-col :span="8" v-for="i in 3">
-            <a-card hoverable style="width: 300px">
+        <a-col :span="6" v-for="i in 6">
+            <a-card hoverable style="width: 100%; margin-bottom: 16px;">
                 <template #cover>
                     <img alt="example" src="https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png" />
                 </template>

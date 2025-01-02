@@ -3,7 +3,7 @@
  * @Author: zhang zhen
  * @Date: 2025-01-01 15:46:23
  * @LastEditors: zhang zhen
- * @LastEditTime: 2025-01-02 10:28:48
+ * @LastEditTime: 2025-01-02 10:33:23
  * @FilePath: /new-template/src/views/example/table.vue
 -->
 <template>
@@ -22,8 +22,18 @@
         </a-col>
         <a-col :span="6">
           <a-form-item>
-            <a-space></a-space>
-
+            <a-space>
+              <a-button type="primary">
+                <template #icon>
+                  <SearchOutlined />
+                </template>查询
+              </a-button>
+              <a-button>
+                <template #icon>
+                  <ReloadOutlined />
+                </template>重置
+              </a-button>
+            </a-space>
           </a-form-item>
         </a-col>
       </a-row>
@@ -47,7 +57,7 @@
 </template>
 <script lang="ts" setup>
 import { ref } from 'vue'
-import { PlusOutlined } from '@ant-design/icons-vue'
+import { PlusOutlined, SearchOutlined, ReloadOutlined } from '@ant-design/icons-vue'
 import type { TableColumnsType } from 'ant-design-vue';
 const columns: TableColumnsType = [
   { title: 'Full Name', width: 100, dataIndex: 'name', key: 'name', fixed: 'left' },

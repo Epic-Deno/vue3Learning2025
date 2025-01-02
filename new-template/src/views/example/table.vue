@@ -3,7 +3,7 @@
  * @Author: zhang zhen
  * @Date: 2025-01-01 15:46:23
  * @LastEditors: zhang zhen
- * @LastEditTime: 2025-01-02 10:24:43
+ * @LastEditTime: 2025-01-02 10:26:29
  * @FilePath: /new-template/src/views/example/table.vue
 -->
 <template>
@@ -12,7 +12,7 @@
       <a-row :gutter="8">
         <a-col :span="8">
           <a-form-item label="name" name="name">
-            <a-input v-model:value="formData.name" />
+            <a-input v-model:value="formData.name" style="width: 180px;" placeholder="请输入" />
           </a-form-item>
         </a-col>
       </a-row>

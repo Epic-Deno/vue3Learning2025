@@ -3,12 +3,17 @@
  * @Author: zhang zhen
  * @Date: 2025-01-01 15:46:23
  * @LastEditors: zhang zhen
- * @LastEditTime: 2025-01-02 10:15:03
+ * @LastEditTime: 2025-01-02 10:16:10
  * @FilePath: /new-template/src/views/example/table.vue
 -->
 <template>
-  <a-flex justify="space-between" align="center">
-    
+  <a-flex justify="space-between" align="center" style="margin-bottom: 15px;">
+    <a-row :gutter="8"> 
+
+    </a-row>
+    <a-space>
+      <a-button type="primary">新增</a-button>
+    </a-space>
   </a-flex>
     <a-table :columns="columns" :data-source="data" bordered :scroll="{ x: 1500, y: 900 }">
       <template #bodyCell="{ column }">

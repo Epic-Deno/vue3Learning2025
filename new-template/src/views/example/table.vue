@@ -3,10 +3,13 @@
  * @Author: zhang zhen
  * @Date: 2025-01-01 15:46:23
  * @LastEditors: zhang zhen
- * @LastEditTime: 2025-01-02 10:11:43
+ * @LastEditTime: 2025-01-02 10:15:03
  * @FilePath: /new-template/src/views/example/table.vue
 -->
 <template>
+  <a-flex justify="space-between" align="center">
+    
+  </a-flex>
     <a-table :columns="columns" :data-source="data" bordered :scroll="{ x: 1500, y: 900 }">
       <template #bodyCell="{ column }">
         <template v-if="column.key === 'operation'">

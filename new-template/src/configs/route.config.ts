@@ -3,7 +3,7 @@
  * @Author: zhang zhen
  * @Date: 2024-12-27 09:59:13
  * @LastEditors: zhang zhen
- * @LastEditTime: 2024-12-28 15:35:02
+ * @LastEditTime: 2025-01-02 10:05:22
  * @FilePath: /new-template/src/configs/route.config.ts
  */
 import type { RouteRecordRaw } from 'vue-router';
@@ -20,6 +20,11 @@ const basicRoutes: Array<RouteRecordRaw> = [
                 path: '/dashborad',
                 name: 'dashborad',
                 component: () => import('@/views/dashborad/index.vue'),
+            },
+            {
+                path: '/table',
+                name: 'tableView',
+                component: () => import('@/views/example/table.vue'),
             }
         ]
     },

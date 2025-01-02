@@ -3,11 +3,11 @@
  * @Author: zhang zhen
  * @Date: 2025-01-01 15:46:23
  * @LastEditors: zhang zhen
- * @LastEditTime: 2025-01-01 15:48:26
+ * @LastEditTime: 2025-01-02 10:11:43
  * @FilePath: /new-template/src/views/example/table.vue
 -->
 <template>
-    <a-table :columns="columns" :data-source="data" :scroll="{ x: 1500, y: 300 }">
+    <a-table :columns="columns" :data-source="data" bordered :scroll="{ x: 1500, y: 900 }">
       <template #bodyCell="{ column }">
         <template v-if="column.key === 'operation'">
           <a>action</a>

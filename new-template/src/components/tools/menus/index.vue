@@ -3,7 +3,7 @@
  * @Author: zhang zhen
  * @Date: 2024-12-28 16:04:31
  * @LastEditors: zhang zhen
- * @LastEditTime: 2025-01-02 10:09:27
+ * @LastEditTime: 2025-01-02 10:10:53
  * @FilePath: /new-template/src/components/tools/menus/index.vue
 -->
 <template>
@@ -19,8 +19,7 @@
               <span>示例</span>
             </span>
           </template>
-          <a-menu-item key="3">Tom</a-menu-item>
-          <a-menu-item key="4">Bill</a-menu-item>
+          <a-menu-item key="table">列表</a-menu-item>
         </a-sub-menu>
     </a-menu>
 </template>

@@ -15,7 +15,7 @@
         <a-sub-menu key="example">
           <template #title>
             <span>
-              <user-outlined />
+              <DatabaseOutlined />
               <span>示例</span>
             </span>
           </template>
@@ -29,7 +29,7 @@
     import { ref } from 'vue';
     import {
         HomeOutlined,
-        ExperimentOutlined
+        DatabaseOutlined
     } from '@ant-design/icons-vue';
     import { useRoute, useRouter } from "vue-router";
     const { name } = useRoute();

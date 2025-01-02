@@ -3,16 +3,27 @@
  * @Author: zhang zhen
  * @Date: 2025-01-01 15:46:23
  * @LastEditors: zhang zhen
- * @LastEditTime: 2025-01-02 10:26:29
+ * @LastEditTime: 2025-01-02 10:28:48
  * @FilePath: /new-template/src/views/example/table.vue
 -->
 <template>
   <a-flex justify="space-between" align="center" style="margin-bottom: 15px;">
-    <a-form>
-      <a-row :gutter="8">
-        <a-col :span="8">
+    <a-form style="flex: 1 0 0;">
+      <a-row :gutter="15">
+        <a-col :span="6">
           <a-form-item label="name" name="name">
-            <a-input v-model:value="formData.name" style="width: 180px;" placeholder="请输入" />
+            <a-input v-model:value="formData.name" style="width: 100%;" placeholder="请输入" />
+          </a-form-item>
+        </a-col>
+        <a-col :span="6">
+          <a-form-item label="age" name="age">
+            <a-input-number v-model:value="formData.age" style="width: 100%;" placeholder="请输入" />
+          </a-form-item>
+        </a-col>
+        <a-col :span="6">
+          <a-form-item>
+            <a-space></a-space>
+
           </a-form-item>
         </a-col>
       </a-row>

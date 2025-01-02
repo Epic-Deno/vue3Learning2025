@@ -47,7 +47,7 @@
       </a-button>
     </a-space>
   </a-flex>
-  <a-table :columns="columns" :data-source="data" bordered :scroll="{ x: 1500, y: 800 }">
+  <a-table :columns="columns" :data-source="data" bordered :scroll="{ x: 1500, y: 550 }">
     <template #bodyCell="{ column }">
       <template v-if="column.key === 'operation'">
         <a>action</a>

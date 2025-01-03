@@ -3,7 +3,7 @@
  * @Author: zhang zhen
  * @Date: 2024-12-28 16:23:19
  * @LastEditors: zhang zhen
- * @LastEditTime: 2025-01-01 15:39:36
+ * @LastEditTime: 2025-01-03 17:44:28
  * @FilePath: /new-template/src/components/tools/userOption.vue
 -->
 <template>
@@ -18,6 +18,9 @@
                 <a-menu>
                     <a-menu-item>
                       基本信息
+                    </a-menu-item>
+                    <a-menu-item>
+                     
                     </a-menu-item>
                     <a-divider style="margin: 0;" />
                     <a-menu-item>

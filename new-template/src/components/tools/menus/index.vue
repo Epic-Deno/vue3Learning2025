@@ -3,7 +3,7 @@
  * @Author: zhang zhen
  * @Date: 2024-12-28 16:04:31
  * @LastEditors: zhang zhen
- * @LastEditTime: 2025-01-02 10:10:53
+ * @LastEditTime: 2025-01-03 17:39:04
  * @FilePath: /new-template/src/components/tools/menus/index.vue
 -->
 <template>
@@ -35,7 +35,7 @@
     const { push } = useRouter();
     const selectedKeys = ref<string[]>([name]);
 
-    const handleClickMenus = (e) => {
+    const handleClickMenus = (e: any) => {
         const { key } = e;
         push(key)
     }

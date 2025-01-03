@@ -3,7 +3,7 @@
  * @Author: zhang zhen
  * @Date: 2025-01-01 15:46:23
  * @LastEditors: zhang zhen
- * @LastEditTime: 2025-01-02 10:33:23
+ * @LastEditTime: 2025-01-03 17:36:46
  * @FilePath: /new-template/src/views/example/table.vue
 -->
 <template>
@@ -47,7 +47,7 @@
       </a-button>
     </a-space>
   </a-flex>
-  <a-table :columns="columns" :data-source="data" bordered :scroll="{ x: 1500, y: 550 }">
+  <a-table :columns="columns" :data-source="data" bordered :scroll="{ x: 1500, y: 560 }">
     <template #bodyCell="{ column }">
       <template v-if="column.key === 'operation'">
         <a>action</a>

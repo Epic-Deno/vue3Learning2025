@@ -62,7 +62,7 @@ import type { TableColumnsType } from 'ant-design-vue';
 const columns: TableColumnsType = [
   { title: 'Full Name', width: 100, dataIndex: 'name', key: 'name', fixed: 'left' },
   { title: 'Age', width: 100, dataIndex: 'age', key: 'age', fixed: 'left' },
-  { title: '', dataIndex: 'address', key: '1', width: 150 },
+  { title: 'Address', dataIndex: 'address', key: '1', width: 150 },
   { title: 'Column 2', dataIndex: 'address', key: '2', width: 150 },
   { title: 'Column 3', dataIndex: 'address', key: '3', width: 150 },
   { title: 'Column 4', dataIndex: 'address', key: '4', width: 150 },

@@ -3,23 +3,11 @@
  * @Author: zhang zhen
  * @Date: 2024-12-27 11:00:54
  * @LastEditors: zhang zhen
- * @LastEditTime: 2025-01-04 15:13:35
+ * @LastEditTime: 2025-01-04 15:18:19
  * @FilePath: /new-template/src/views/dashborad/index.vue
 -->
 <template>
     <a-layout class="dashboard-layout">
-    <!-- Header -->
-    <a-layout-header>
-      <div class="header-content">
-        <div class="header-title">早安, Vben, 开始您一天的工作吧!</div>
-        <div class="header-info">今日晴，20°C - 32°C</div>
-        <div class="header-stats">
-          <a-statistic title="待办" value="2/10" />
-          <a-statistic title="项目" value="8" />
-          <a-statistic title="团队" value="300" />
-        </div>
-      </div>
-    </a-layout-header>
 
     <!-- Main Content -->
     <a-layout-content>
@@ -44,7 +32,7 @@
           <a-card title="快捷导航" bordered>
             <a-row gutter="16">
               <a-col v-for="menu in quickMenu" :key="menu.title" span="12">
-                <a-button :icon="menu.icon" block>{{ menu.title }}</a-button>
+                <a-button block style="margin-bottom: 16px;">{{ menu.title }}</a-button>
               </a-col>
             </a-row>
           </a-card>
@@ -66,14 +54,14 @@
         <!-- 待办事项 -->
         <a-col span="8">
           <a-card title="待办事项" bordered>
-            <a-list
+            <!-- <a-list
               :data-source="todos"
-              :render-item="todo => (
+              :render-item="(todo: any) => (
                 <a-list-item>
                   <a-checkbox>{{ todo.content }}</a-checkbox>
                 </a-list-item>
               )"
-            />
+            /> -->
           </a-card>
         </a-col>
       </a-row>

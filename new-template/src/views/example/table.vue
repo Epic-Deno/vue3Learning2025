@@ -3,7 +3,7 @@
  * @Author: zhang zhen
  * @Date: 2025-01-01 15:46:23
  * @LastEditors: zhang zhen
- * @LastEditTime: 2025-01-03 17:36:46
+ * @LastEditTime: 2025-01-04 15:20:49
  * @FilePath: /new-template/src/views/example/table.vue
 -->
 <template>
@@ -47,7 +47,7 @@
       </a-button>
     </a-space>
   </a-flex>
-  <a-table :columns="columns" :data-source="data" bordered :scroll="{ x: 1500, y: 560 }">
+  <a-table :columns="columns" :data-source="data" bordered :scroll="{ x: 1500, y: 530 }">
     <template #bodyCell="{ column }">
       <template v-if="column.key === 'operation'">
         <a>action</a>
@@ -62,7 +62,7 @@ import type { TableColumnsType } from 'ant-design-vue';
 const columns: TableColumnsType = [
   { title: 'Full Name', width: 100, dataIndex: 'name', key: 'name', fixed: 'left' },
   { title: 'Age', width: 100, dataIndex: 'age', key: 'age', fixed: 'left' },
-  { title: 'Column 1', dataIndex: 'address', key: '1', width: 150 },
+  { title: '', dataIndex: 'address', key: '1', width: 150 },
   { title: 'Column 2', dataIndex: 'address', key: '2', width: 150 },
   { title: 'Column 3', dataIndex: 'address', key: '3', width: 150 },
   { title: 'Column 4', dataIndex: 'address', key: '4', width: 150 },

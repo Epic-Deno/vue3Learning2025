@@ -3,7 +3,7 @@
  * @Author: zhang zhen
  * @Date: 2025-01-04 15:22:40
  * @LastEditors: zhang zhen
- * @LastEditTime: 2025-01-05 15:31:26
+ * @LastEditTime: 2025-01-05 15:32:33
  * @FilePath: /new-template/src/views/example/modules/drawerView.vue
 -->
 <template>
@@ -17,9 +17,7 @@
       placement="right"
       @after-open-change="afterOpenChange"
     >
-      <p>Some contents...</p>
-      <p>Some contents...</p>
-      <p>Some contents...</p>
+
     </a-drawer>
   </template>
   <script lang="ts" setup>

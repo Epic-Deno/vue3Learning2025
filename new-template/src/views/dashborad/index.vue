@@ -3,14 +3,14 @@
  * @Author: zhang zhen
  * @Date: 2024-12-27 11:00:54
  * @LastEditors: zhang zhen
- * @LastEditTime: 2025-01-04 15:18:19
+ * @LastEditTime: 2025-01-05 15:26:46
  * @FilePath: /new-template/src/views/dashborad/index.vue
 -->
 <template>
     <a-layout class="dashboard-layout">
 
     <!-- Main Content -->
-    <a-layout-content>
+    <a-layout-content class="inline-box">
       <a-row gutter="16">
         <!-- 项目 -->
         <a-col span="16">
@@ -103,6 +103,10 @@
   <style scoped>
   .dashboard-layout {
     height: 100%;
+  }
+  .inline-box {
+    padding: 0;
+    background-color: transparent;
   }
   .header-content {
     display: flex;

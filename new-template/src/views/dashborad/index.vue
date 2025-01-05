@@ -3,7 +3,7 @@
  * @Author: zhang zhen
  * @Date: 2024-12-27 11:00:54
  * @LastEditors: zhang zhen
- * @LastEditTime: 2025-01-05 15:26:46
+ * @LastEditTime: 2025-01-05 15:29:07
  * @FilePath: /new-template/src/views/dashborad/index.vue
 -->
 <template>
@@ -100,9 +100,13 @@
     ]);
   </script>
   
-  <style scoped>
-  .dashboard-layout {
-    height: 100%;
+  <style lang="less" scoped>
+  // .dashboard-layout {
+  //   height: 100%;
+  // }
+
+  :deep(.ant-card) {
+    margin-bottom: 15px;
   }
   .inline-box {
     padding: 0;

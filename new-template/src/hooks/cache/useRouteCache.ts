@@ -3,7 +3,7 @@
  * @Author: zhang zhen
  * @Date: 2025-01-06 18:08:00
  * @LastEditors: zhang zhen
- * @LastEditTime: 2025-01-06 18:08:02
+ * @LastEditTime: 2025-01-06 18:09:20
  * @FilePath: /new-template/src/hooks/cache/useRouteCache.ts
  */
 import { ref } from 'vue';
@@ -14,4 +14,10 @@ export default function useRouteCache() {
 
     const router = useRouter();
     const route = useRoute();
+
+    route.matched.forEach((routeMatch) => {
+        const name = routeMatch.name;
+        if (typeof name !== 'string') return;
+
+      });
 };

@@ -10,5 +10,8 @@ import { ref } from 'vue';
 import { useRoute, useRouter } from 'vue-router';
 
 export default function useRouteCache() {
+    const cachePages = ref<string[]>([]);
 
+    const router = useRouter();
+    const route = useRoute();
 };

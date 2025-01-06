@@ -42,6 +42,6 @@ export default function useRouteCache() {
           next();
       });
       return {
-        cachePages,
+        cachePages
       };
 };

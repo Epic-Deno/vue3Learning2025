@@ -29,4 +29,9 @@ export default function useRouteCache() {
             }
           }
       });
+
+      router.beforeEach((to, _from, next) => {
+        const name = to.name;
+     
+      });
 };

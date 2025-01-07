@@ -92,12 +92,6 @@
       { user: '艾文', action: '关注了', target: '威廉', time: '1小时前' },
     ]);
 
-    // 待办事项
-    const todos = ref([
-      { content: '审核前端代码提交', completed: false },
-      { content: '系统性能优化', completed: false },
-      { content: '安全检查', completed: false },
-    ]);
   </script>
   
   <style lang="less" scoped>
